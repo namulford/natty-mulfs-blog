@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-
 class AddPost extends Component {
     constructor() {
         super();
@@ -50,13 +49,15 @@ class AddPost extends Component {
         });
     }
 
-
-
-    
-
     render() {
         return (
             <form>
+                <h2 style={{ height: 50 }}>
+                    <Link to="/posts">View Blogs</Link>
+                </h2>
+                <h2>
+                    <Link to="/home">Home</Link>
+                </h2>
                 <div className="AddPost">
                     <label>Title</label>
                     <input
@@ -88,9 +89,6 @@ class AddPost extends Component {
                         onClick={ this.handleClear }>
                     Clear
                     </button>
-                    <h2>
-                        <Link to="/posts">View Blogs</Link>
-                    </h2>
             </form>
             
         );

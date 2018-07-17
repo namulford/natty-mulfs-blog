@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Link } from 'react-router';
-
 
 class Posts extends Component {
     render() {
@@ -16,11 +15,19 @@ class Posts extends Component {
 
         return (
             <form>
+                <div>
+                    <h2>
+                        <Link to="/add-post">Add New Blog</Link>
+                    </h2>
+                    <h2>
+                        <Link to="/home">Home</Link>
+                    </h2>
+                </div>
                 <div className="Posts">
                     { Object.keys(posts).map(function(key) {
                         return (
                             <div key={key}>
-                            <h1>
+                                <h1>
                                 { posts[key].title }
                                 </h1> 
                                 <p>
@@ -30,11 +37,6 @@ class Posts extends Component {
                         );
                     })}
 
-                </div>
-                <div>
-                    <h2>
-                        <Link to="/add-post">Add New Blog</Link>
-                    </h2>
                 </div>
 
             </form>
