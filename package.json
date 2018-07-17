@@ -7,15 +7,21 @@
     "flexbox-react": "^4.4.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-flexbox-grid": "^2.1.2",
     "react-router": "^3.2.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.7",
-    "semantic-ui-react": "^0.81.3"
+    "semantic-ui-react": "^0.81.3",
+    "yarn": "^1.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.21.0"
   }
 }
